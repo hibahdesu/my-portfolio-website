@@ -1,0 +1,55 @@
+body {
+    min-height: 100vh;
+    display: grid;
+}
+.hero {
+    align-self: start;
+}
+.sectionOne {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.footerWrapper {
+    align-self: end;
+}
+.text {
+    font-family: var(--font-2);
+    font-size: var(--sub);
+    color: var(--color-white-75);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-family: var(--font-2);
+    font-size: var(--sub);
+    color: var(--color-white-100);
+}
+input, textarea {
+padding: 15px 30px;
+margin: 12px 0;
+border: 2px solid var(--color-yellow-75);
+border-radius: 4px;
+font-size: var(--sub);
+background-color: var(--color-dark-100);
+color: var(--color-white-75);
+}
+.yellow-btn {
+    margin-top: 15px;
+    justify-self: center;
+}
+.sectionTwo__right  {
+    border: 2px solid var(--color-yellow-100);
+}
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sectionTwo__left {
+        order: 1;
+    }
+    .sectionTwo__right {
+        order: 0;
+    }
+}

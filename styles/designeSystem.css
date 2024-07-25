@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Work+Sans:wght@100;200;400;500;600;700;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+:root {
+    --h1: 40px;
+    --h2: 32px;
+    --h3: 28px;
+    --h4: 24px;
+    --h5: 20px;
+    --h6: 16px;
+
+    --sub: 20px;
+
+    --label: 16px;
+    --ls: 5px;
+
+    --body: 24px;
+
+    --font-1: 'Crimson Text', serif;
+    --font-2: 'Work Sans', sans-serif;
+    --color-dark-100: rgb(1, 0, 14, 1);
+    --color-dark-75: rgba(1, 0, 14, 0.75);
+    --color-dark-50: rgba(1, 0, 14, 0.50);
+    --color-dark-25: rgba(1, 0, 14, 0.25);
+    --color-white-100: rgba(255, 255, 255, 1);
+    --color-white-75: rgba(255, 255, 255, 0.75);
+    --color-white-50: rgba(255, 255, 255, 0.50);
+    --color-white-25: rgba(255, 255, 255, 0.25);
+    --color-yellow-100: rgb(202, 78, 44, 1);
+    --color-yellow-75: rgb(202, 78, 44, 0.75);
+    --color-yellow-50: rgb(202, 78, 44, 0.50);
+    --color-yellow-25: rgb(202, 78, 44, 0.25);
+    --shadow-1: 3px 4px 12px 1px rgba(255, 255, 255, 0.25);
+}
+/**
+* ! Style for removing defaul styles of the browser
+**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: var(--color-dark-100);
+}
+/**
+* ! Style for common buttons
+**/
+.white-btn, .yellow-btn{
+color: var(--color-dark-100);
+background-color: var(--color-white-100);
+cursor: pointer;
+font-size: var(--h5);
+font-family: var(--font-2);
+border: none;
+border-radius: 30px;
+padding: 15px 30px;
+}
+.yellow-btn{
+background-color: var(--color-yellow-100);
+}
+.yellow-btn:hover {
+    color: var(--color-dark-100);
+    background-color: var(--color-white-100);
+}
+.white-btn:hover {
+    color: var(--color-yellow-100);
+    background-color: var(--color-dark-100);
+}
+/**
+* ! Style for text colors
+**/
+.text-white {
+color: var(--color-white-100);
+}
+.text-date {
+    color: var(--color-white-50);
+    }
+.text-dark {
+color: var(--color-dark-100);
+}
+.text-yellow {
+color: var(--color-yellow-100);
+}
+
+/**
+* ! Style for label
+**/
+.label {
+    font-family: var(--font-2);
+    font-size: var(--label);
+    letter-spacing: var(--ls);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/**
+* ! Style for hero section
+**/
+.hero {
+background-color: var(--color-yellow-100);
+}
+
+/**
+* ! Style for navbar
+**/
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30 0;
+}
+.navbar__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.navbar__logo--text {
+    font-size: var(--h2);
+    font-family: var(--font-2);
+    font-weight: 500;
+    color: var(--color-dark-100);
+}
+.navbar__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-family: var(--font-2);
+    font-size: var(--h4);
+}
+.navbar__menu a:hover, .navbar__menu a.active {
+    color: var(--color-white-100);
+}
+[class ^='navbar__menu--'] {
+    color: var(--color-dark-100);
+    text-decoration: none;
+}
+.navbar__icons {
+    display: none;
+}
+.navbar__icons i {
+    cursor: pointer;
+    font-size: var(--h2);
+    color: var(--color-dark-100);
+}
+/**
+* ! Style for common classes
+**/
+.container {
+    max-width: 1140px;
+    margin: auto;
+    
+}
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 40px 0;
+    gap: 25px;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.common-title {
+    text-transform: capitalize;
+    font-size: var(--h1);
+    font-weight: bold;
+    font-family: var(--font-1);
+}
+.text-center {
+    text-align: center;
+}
+hr {
+   border: 1px solid var(--color-white-100);
+}
+/**
+* ! Style for footer section
+**/
+.footerWrapper {
+    background-color: var(--color-yellow-100);
+}
+.footerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.footerLinks__socials {
+    display: flex;
+    gap: 15px;
+}
+.footerLinks__copyright {
+    font-size: var(--sub);
+    font-family: var(--font-2);
+}
+.footerLinks__socials i {
+    cursor: pointer;
+    font-size: 25px;
+    color: var(--color-dark-100);
+}
+.footerLinks__socials i:hover {
+    color: var(--color-white-100);
+}
+/** 
+* ! Style for common media querey for desktop
+**/
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+/**
+* ! Style for common media querey for laptop
+**/
+@media (max-width: 1024px) {
+    .container {
+        max-width: 740px;
+    }
+    .common-title {
+        font-size: var(--h4);
+    }
+    
+}
+
+/**
+* ! Style for common media querey for tablet
+**/
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container {
+        max-width: 500px;
+    }
+    .navbar__menu {
+        z-index: 1;
+        background-color: var(--color-yellow-100);
+        position: absolute;
+        top: 12vh;
+        width: 100%;
+        right: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .navbar__menu--1 {
+        margin-top: -200px;
+    }
+    .navbar__icons {
+        display: block;
+    }
+    .hide {
+        display: none;
+    }
+    .hidden {
+        z-index: -1;
+        opacity: 0%;
+    }
+    .footerLinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+}
+
+/**
+* ! Style for common media querey for mobile
+**/
+@media (max-width: 568px) {
+    .container {
+        max-width: 90%;
+    }
+}
