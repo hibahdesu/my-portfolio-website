@@ -46,6 +46,25 @@ a {
 body {
     background-color: var(--color-dark-100);
 }
+
+.bouncing-image {
+    /* width: 200px; Set the width of the image */
+    /* height: auto; Maintain the aspect ratio of the image */
+    animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
 /**
 * ! Style for common buttons
 **/
@@ -184,6 +203,25 @@ background-color: var(--color-yellow-100);
 hr {
    border: 1px solid var(--color-white-100);
 }
+.link {
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid var(--color-yellow-50);
+    border-top: 2px solid var(--color-yellow-50);
+    align-self: center;
+    color: var(--color-white-50);
+}
+.link:active, .link:hover {
+    font-size: 20px;
+    border-bottom: 2px solid var(--color-yellow-100);
+    border-top: 2px solid var(--color-yellow-100);
+    /* border-bottom-left-radius: 4px; */
+    color: var(--color-white-100);
+}
+.style {
+    border-bottom: 2px solid var(--color-white-75);
+}
+
 /**
 * ! Style for footer section
 **/
