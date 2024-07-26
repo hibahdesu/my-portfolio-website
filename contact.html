@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/designeSystem.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="icon" href="images/logo.png">
+    <title>Hibah Sindi - Contact</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar container">
+            <div class="navbar__logo">
+                <img src="images/logo.png" alt="Logo image" class="navbar__logo--image">
+                <div class="navbar__logo--text">Hibah Sindi</div>
+            </div>
+            <div class="navbar__menu hidden">
+                <a href="index.html" class="navbar__menu--1  ">Home</a>
+                <a href="portfolio.html" class="navbar__menu--2 ">Projects</a>
+                <a href="contact.html" class="navbar__menu--2 active">Contact</a>
+            </div>
+            <div class="navbar__icons">
+                <i class="bi bi-list"></i>
+                <i class="bi bi-x-lg hide"></i>
+            </div>
+        </div>
+        </div>
+    <div class="sectionOne container text-center">
+        <div class="sectionOne-label label text-white">Contact</div>
+        <div class="common-title text-yellow">Contact Me</div>
+        <div class="text">Contact Me if you need my help.</div>
+    </div>
+
+    <div class="sectionTwo container grid">
+        <div class="sectionTwo__left">
+            <form class="form" onsubmit="sendEmail(event)">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter Your Name" id="name">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter Your Email" id="email">
+
+                <label for="message">Message</label>
+                <textarea placeholder="Enter Your Message" name="" id="message" cols="30" rows="8"></textarea>
+                <button class="yellow-btn" type="submit">Submit</button>
+            </form>
+        </div>
+        <img src="images/contact/contact.png" alt="contact image" class="sectionTwo__right responsive-image bouncing-image">
+
+    </div>
+
+
+        <div class="footerWrapper">
+            <div class="footerLinks container">
+                <div class="footerLinks__socials">
+                    <a href="https://x.com/hibah_sindi"><i class="bi bi-twitter">  </i></a>
+                    <a href="https://www.linkedin.com/in/hibah-sindi-5104701aa/"><i class="bi bi-linkedin">  </i></a>
+                    <a href="https://www.youtube.com/@ElMundoDeLaProgramadora"><i class="bi bi-youtube">  </i></a>
+                    <a href="https://github.com/hibahdesu"><i class="bi bi-github">  </i></a>
+                </div>
+                <div class="footerLinks__copyright text-dark text-center">
+                    © Hibah Sindi, 2024. All rights reserved.
+                </div>
+            </div>
+        </div>
+    <script src="main.js"></script>
+</body>
+</html>
