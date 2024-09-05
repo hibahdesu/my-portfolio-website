@@ -6,6 +6,8 @@
     font-family: var(--font-2);
     font-size: var(--body);
     color: var(--color-white-100);
+    font-weight: bold;
+    transition: opacity 0.5s;
 }
 .sectionOne__left--btn {
     align-self: start;

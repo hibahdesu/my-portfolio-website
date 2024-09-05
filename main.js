@@ -28,3 +28,29 @@ function sendEmail(event) {
     var mailtoLink = "mailto:" + emailAddress + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
     window.location.href = mailtoLink;
 }
+
+const phrases = [
+    "Certified TensorFlow Developer",
+    "Data Science",
+    "Data Analysis",
+    "Machine Learning Engineer",
+    "Developer",
+    "Web Designer",
+    "Freelancer"
+];
+
+let index = 0;
+
+function displayWord() {
+    const wordDisplay = document.getElementById('wordDisplay');
+    wordDisplay.style.opacity = 0; // Fade out
+
+    setTimeout(() => {
+        wordDisplay.textContent = phrases[index]; // Change text
+        wordDisplay.style.opacity = 1; // Fade in
+        index = (index + 1) % phrases.length; // Move to next phrase
+    }, 500); // Wait for fade out before changing text
+}
+
+setInterval(displayWord, 3000); // Change phrase every 2 seconds
+displayWord(); // Initial call to display the first phrase
